@@ -1,0 +1,107 @@
+*{box-sizing: border-box;
+    padding: 0;
+    margin: 0;}
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: #eee;
+        position: relative;
+    }
+    
+    .container::before{
+        content: "";
+        position: absolute;
+        width:100vw;
+        height: 2px ;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-color: gray;
+    }
+    
+    .container::after{
+        content: "";
+        position: absolute;
+        width:2px;
+        height: 100vh ;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: gray;
+    }
+    
+    .container > div {
+        display: flex;
+        width: 33.5%;
+        height: 30%;
+    }
+    .container > div:nth-of-type(2){
+        flex-direction: column;
+    }
+
+    .container > div > div{
+        width: 100%;
+        height: 100%;
+    }
+
+    .france-red {
+        background-color: red;
+    }
+    
+    .france-white {
+        background-color: white;
+    }
+    
+    .france-blue {
+        background-color: blue;
+    }
+    
+    .syria-red {
+        background-color: red;
+        
+    }
+    
+    .syria-white {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+    }
+    .syria-white i{
+        color: green;
+        font-size: 25px;
+    }
+
+    .syria-black {
+        background-color: black;
+    }
+    
+    .belgium-black {
+        background-color: black;
+    }
+    
+    .belgium-yellow {
+        background-color: yellow;
+    }
+    
+    .belgium-red {
+        background-color: red;
+    }
+    
+    .italy-green {
+        background-color: green;
+    }
+    
+    .italy-white {
+        background-color: white;
+    }
+    
+    .italy-red {
+        background-color: red;
+    }
